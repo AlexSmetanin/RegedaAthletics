@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Unbounded', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
+}
+
+main {
+  padding-top: 120px;
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.contacts h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.social-section {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+}
+
+.social-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-family: "Overpass Mono", monospace;
+  transition: color 0.3s ease;
+}
+
+.social-link img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #0077cc;
+}
+
+.social-link:hover img {
+  transform: scale(1.1);
+}

@@ -1,0 +1,110 @@
+.unbounded {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+* {
+  font-family: Unbounded;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass Mono", monospace;
+  background-color: #f5f5f5;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-wrap: wrap; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.coaches-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.coach-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 30px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.coach-block img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.coach-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Unbounded", sans-serif;
+}
+
+.coach-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Фото праворуч у другому блоці */
+.coach-block.right {
+  flex-direction: row-reverse;
+}
